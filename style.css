@@ -5,28 +5,38 @@ h1 {
 	color: #3a241d;
 	text-align: center;
 }
-.navbar {
-    background-color: #220f01;
-}
 ul {
+  background-color: #220f01;
   position: fixed;
   top: 0;
   width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
 li {
-  float: left;
+  margin: 0 15px;
 }
+
 a {
   display: block;
-  padding: 8px;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
 }
-.options {
-    color: #e0240b;
-    
+
+a:hover {
+  background-color: #3a1a05;
+  border-radius: 5px;
 }
+
 .logo {
-    width: 200px;
-    height: 200px;
-    padding: 0px;
-    margin: 0px;
+  height: 40px;
+  width: auto;
+  padding: 0;
+  margin-right: 20px;
 }
