@@ -5,9 +5,22 @@ h1 {
 	color: #3a241d;
 	text-align: center;
 }
+.navbar {
+    background-color: #220f01;
+}
+li {
+  float: left;
+}
+a {
+  display: block;
+  padding: 8px;
+}
+.options {
+    color: #e0240b;
+}
 .logo {
-    position: top, left;
-    size: 35px,35px,35px,35px;
+    width: 200px;
+    height: 200px;
     padding: 0px;
     margin: 0px;
 }
