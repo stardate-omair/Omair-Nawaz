@@ -8,6 +8,11 @@ h1 {
 .navbar {
     background-color: #220f01;
 }
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 li {
   float: left;
 }
@@ -17,6 +22,7 @@ a {
 }
 .options {
     color: #e0240b;
+    
 }
 .logo {
     width: 200px;
