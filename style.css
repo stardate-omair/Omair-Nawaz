@@ -1,8 +1,8 @@
 body {
+    background-color: #3a1a05;
     font-family: "Inter", "Segoe UI", Roboto, sans-serif;
 }
 h1 {
-	color: #3a241d;
 	text-align: center;
 }
 ul {
@@ -39,4 +39,19 @@ a:hover {
   width: auto;
   padding: 0;
   margin-right: 20px;
+}
+.pfp {
+    height: 50%;
+    width: 50%;
+}
+.left-container{
+    color:antiquewhite;
+    margin-right: 50%;
+    margin-top: 300px;
+    margin-left: 40px;
+}
+.right-container {
+    align-items: center;
+    margin-left:50%;
+    margin-top: 200px;
 }
