@@ -1,44 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Omair Nawaz</title>
-        <meta charset="utf-8" />
-        <meta name = "viewport" content = "width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href = "./style.css">
-        <script src="" defer></script>
 
-    </head>
+<head>
+    <title>Omair Nawaz</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="" defer></script>
 
-    <body>
-        <div class="navbar">
-        <ul>
-            <li>
-                <a href="index.html">
-                <img class="logo" src="./images/ON logo.png" alt="Home">
-                </a>
-            </li>
-            <li><a href="default.asp">About Me</a></li>
-            <li><a href="experience.asp">Experience</a></li>
-            <li><a href="projects.asp">Projects</a></li>
-            <li><a href="cp.asp">Current Passions</a></li>
-            <li><a href="contact.asp">Contact Me</a></li>
-        </ul>
-        </div>
-        
-    <div class="container">
-        <div class="left-container">
-        <h1>Hi, I'm Omair.</h1>
-        <h2>
-            I'm an aspiring computer scientist with a deep curiosity for how technology shapes our world.
-            What started as a fascination with computers has grown into a passion for coding,
-            a tool I use to solve problems and improve people's lives.
-            This journey is just beginning, and I'm excited to see where it leads.
-        </h2>
-        </div>
-        <div class="right-container">
-        <img class="pfp" src="./images/profilepic.jpg" alt="Omair with his classic reassuring Smile" />
-        </div>
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="cursor-tracker">
+        <span class="label">DISTANCE:</span>
+        <span id="pixel-odometer">0</span>
+        <span class="unit">PX</span>
     </div>
 
-    </body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo-link">
+                <img class="logo" src="./images/ON logo.png" alt="Omair Nawaz Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span class="highlight">Omair</span>.</h1>
+                    <h2>Aspiring Computer Scientist & Tech Explorer</h2>
+                    <p>
+                        Deeply curious about how technology shapes our world.
+                        From a fascination with computers to a passion for coding,
+                        I build tools to solve problems and improve lives.
+                    </p>
+                    <a href="#projects" class="cta-button">View My Work</a>
+                </div>
+                <div class="hero-image">
+                    <img class="pfp" src="./images/profilepic.jpg" alt="Omair Nawaz" />
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-text">
+                    <p>
+                        Technology has always been more than just tools to me; it's a language of endless possibility.
+                        My journey started with a simple question: "How does this work?"
+                        That curiosity led me down the rabbit hole of computer science, where I discovered that with
+                        enough persistence and coffee, anything is buildable.
+                    </p>
+                    <p>
+                        I'm currently focused on expanding my knowledge in full-stack development and exploring
+                        artificial intelligence.
+                        When I'm not coding, you can find me exploring new tech trends, gaming, or working on personal
+                        projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span>JavaScript (ES6+)</span>
+                            <span>Python</span>
+                            <span>HTML5 & CSS3</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Frameworks</h3>
+                        <div class="skill-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Git & GitHub</span>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">2023 - Present</span>
+                        <h3>Computer Science Student</h3>
+                        <p class="role">University Name</p>
+                        <p>Focusing on Algorithms, Data Structures, and Software Engineering principles. Building a
+                            strong foundation for a career in tech.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2022</span>
+                        <h3>Freelance Web Developer</h3>
+                        <p class="role">Self-Employed</p>
+                        <p>Developed custom websites for local businesses, improving their online presence and user
+                            engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Personal Portfolio</h3>
+                        <p>A dark-themed, interactive single-page application built with vanilla JS and CSS. Features a
+                            custom cursor distance tracker.</p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link">View Code &rarr;</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Weather App Dashboard</h3>
+                        <p>Real-time weather tracking application collecting data from external APIs to display
+                            forecasts and climate trends.</p>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>API Integration</span>
+                        </div>
+                        <a href="#" class="project-link">View Code &rarr;</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Task Management Tool</h3>
+                        <p>A productivity CLI tool helping users organize daily tasks with priority headers and local
+                            storage persistence.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>CLI</span>
+                        </div>
+                        <a href="#" class="project-link">View Code &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p>Get in touch!</p>
+                <a href="mailto:omair@example.com" class="cta-button">Email Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Omair Nawaz. Built with curiosity.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
 </html>
